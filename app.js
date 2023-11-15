@@ -19,6 +19,7 @@ app.use(cors({
 app.use(mongoSanitize());
 app.use(xss());
 
+app.use('/', res.status(200).json({ status: 'success' }))
 app.use('/api/v1/quotes', quoteRouter);
 
 module.exports = app;
