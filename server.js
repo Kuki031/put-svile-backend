@@ -5,8 +5,8 @@ dotenv.config({ path: './cfg.env' });
 const mongoose = require('mongoose');
 const app = require(`./app.js`);
 const DB_CONNECT = process.env.DB_CONNECTION_STRING.replace('<password>', process.env.DB_CONNECTION_PW);
-// const PORT = process.env.PORT || 3000;
-// const LOCALHOST = process.env.LOCALHOST;
+const PORT = process.env.PORT || 3000;
+const LOCALHOST = process.env.LOCALHOST;
 
 const connectToDB = async () => {
     try {
@@ -19,7 +19,7 @@ const connectToDB = async () => {
 }
 connectToDB();
 
-app.listen(() => {
-    console.log(`App running.`);
+app.listen(PORT, LOCALHOST, () => {
+    console.log(`App running on ${LOCALHOST}:${PORT}`);
 })
 
