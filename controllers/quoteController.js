@@ -1,6 +1,7 @@
 'use strict';
 
 const Quote = require('../models/quoteModel');
+const apiError = require('../utils/apiError');
 
 exports.getAllQuotes = async (req, res, next) => {
     try {
@@ -11,7 +12,7 @@ exports.getAllQuotes = async (req, res, next) => {
         })
     }
     catch (err) {
-        console.error(err.message);
+        return next(new apiError('Something went wrong.', 500));
     }
 }
 
@@ -37,6 +38,6 @@ exports.getOneQuote = async (req, res, next) => {
 
     }
     catch (err) {
-        console.error(err.message);
+        return next(new apiError('Something went wrong.', 500));
     }
 }

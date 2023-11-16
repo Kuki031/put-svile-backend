@@ -8,6 +8,8 @@ const helmet = require('helmet');
 const xss = require('xss-clean');
 const app = express();
 const quoteRouter = require('./routes/quoteRoutes');
+const errorController = require('./controllers/errorController');
+
 
 if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 app.use(helmet());
@@ -18,6 +20,8 @@ app.use(cors({
 }));
 app.use(mongoSanitize());
 app.use(xss());
+
 app.use('/api/v1/quotes', quoteRouter);
 
+app.use('/', errorController);
 module.exports = app;

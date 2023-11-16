@@ -19,6 +19,7 @@ const connectToDB = async () => {
 }
 connectToDB();
 
+
 app.listen(PORT, LOCALHOST, () => {
     console.log(`App running on ${LOCALHOST}:${PORT}`);
 })

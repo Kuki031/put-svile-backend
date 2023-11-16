@@ -19,7 +19,7 @@ quoteSchema.virtual('origin').get(function () {
     return this.quote.includes('Marco Polo') ? `Marco Polo` : `Kublai Khan`;
 })
 quoteSchema.pre(/^find/, function (next) {
-    this.select("-__v -quoteKey");
+    this.select("-__v");
     next();
 })
 
