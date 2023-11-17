@@ -1,28 +1,28 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const quoteSchema = new mongoose.Schema({
-    quoteKey: {
+const factSchema = new mongoose.Schema({
+    factKey: {
         type: Number,
-        unique: true
+        unique: true,
+        required: true
     },
-    quote: {
-        type: String,
-        unique: true
+    lang: {
+        type: Array,
+        required: true
     }
 }, {
     toJSON: { virtuals: true },
     toObject: { virtuals: true }
 })
 
-quoteSchema.virtual('origin').get(function () {
-    return this.quote.includes('Marco Polo') ? `Marco Polo` : `Kublai Khan`;
-})
-quoteSchema.pre(/^find/, function (next) {
+
+factSchema.pre(/^find/, function (next) {
     this.select("-__v");
+    this.sort("factKey");
     next();
 })
 
 
-const Quote = mongoose.model('Quote', quoteSchema);
-module.exports = Quote;
+const Fact = mongoose.model('Fact', factSchema);
+module.exports = Fact;

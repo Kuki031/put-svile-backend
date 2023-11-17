@@ -5,7 +5,6 @@ const quoteController = require('../controllers/quoteController');
 const quoteRouter = express.Router();
 
 
-quoteRouter.route('/').get(quoteController.getAllQuotes);
-quoteRouter.route('/single-quote').get(quoteController.getOneQuote);
-
+quoteRouter.route('/').get(quoteController.getAllFacts).post(quoteController.createNewFact);
+quoteRouter.route('/single-quote').get(quoteController.getOneFact);
 module.exports = quoteRouter;

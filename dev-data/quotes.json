@@ -1,166 +1,402 @@
 [
     {
-        "quoteKey": 0,
-        "quote": "Did you know that Marco Polo was born in 1254 in the Republic of Venice?"
+        "factKey": 0,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Marko Polo rođen 1254. godine u Republici Veneciji?",
+                "eng": "Did you know that Marco Polo was born in 1254 in the Republic of Venice?",
+                "ch": "你知道马可·波罗于 1254 年出生于威尼斯共和国吗?"
+            }
+        ]
     },
     {
-        "quoteKey": 1,
-        "quote": "Did you know that Marco Polo's family was involved in trade, and he embarked on a journey with them to Asia at the age of 17?"
+        "factKey": 1,
+        "lang": [
+            {
+                "hr": "Jeste li znali da se obitelj Marka Pola bavila trgovinom, a on je s njima krenuo na putovanje u Aziju sa 17 godina?",
+                "eng": "Did you know that Marco Polo's family was involved in trade, and he embarked on a journey with them to Asia at the age of 17?",
+                "ch": "您是否知道马可·波罗的家族从事贸易，他在 17 岁时随家人踏上了前往亚洲的旅程"
+            }
+        ]
     },
     {
-        "quoteKey": 2,
-        "quote": "Did you know that Marco Polo was born in 1254 in the Republic of Venice?"
+        "factKey": 2,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je putovanje Marka Pola trajalo 24 godine, vodeći ga kroz Perziju, Indiju i Kinu?",
+                "eng": "Did you know that Marco Polo's travels lasted for 24 years, taking him through Persia, India, and China?",
+                "ch": "你知道马可波罗的旅行持续了24年,穿越了波斯、印度和中国吗?"
+            }
+        ]
     },
     {
-        "quoteKey": 3,
-        "quote": "Did you know that Marco Polo's travels lasted for 24 years, taking him through Persia, India, and China?"
+        "factKey": 3,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Marco Polo postao pouzdanik i izaslanik Kublaj-kana tijekom njegovog vremena na mongolskom dvoru?",
+                "eng": "Did you know that Marco Polo became a confidant and emissary of Kublai Khan during his time in the Mongol court?",
+                "ch": "你知道马可·波罗在蒙古宫廷期间成为了忽必烈汗的心腹和使者吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 4,
-        "quote": "Did you know that Marco Polo became a confidant and emissary of Kublai Khan during his time in the Mongol court?"
+        "factKey": 4,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Marko Polo dokumentirao svoja opsežna putovanja u knjizi pod naslovom 'Il Milione' ili 'Putovanja Marka Pola'?",
+                "eng": "Did you know that Marco Polo documented his extensive travels in a book titled 'Il Milione' or 'The Travels of Marco Polo'?",
+                "ch": "你知道马可波罗在一本名为《Il Milione》或《马可波罗游记》的书中记录了他的广泛旅行吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 5,
-        "quote": "Did you know that Marco Polo documented his extensive travels in a book titled 'Il Milione' or 'The Travels of Marco Polo'?"
+        "factKey": 5,
+        "lang": [
+            {
+                "hr": "Jeste li znali da su izvještaji Marka Pola o njegovim putovanjima upoznali Europljane s bogatstvima i čudima Istoka?",
+                "eng": "Did you know that Marco Polo's accounts of his travels introduced Europeans to the riches and wonders of the East?",
+                "ch": "你知道马可·波罗的旅行记向欧洲人介绍了东方的财富和奇迹吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 6,
-        "quote": "Did you know that Marco Polo's accounts of his travels introduced Europeans to the riches and wonders of the East?"
+        "factKey": 6,
+        "lang": [
+            {
+                "hr": "Jeste li znali da su neki znanstvenici raspravljali o točnosti opisa Marka Pola, što je dovelo do rasprava o autentičnosti njegovih putovanja?",
+                "eng": "Did you know that some scholars have debated the accuracy of Marco Polo's descriptions, leading to discussions about the authenticity of his travels?",
+                "ch": "您是否知道一些学者对马可·波罗描述的准确性存在争议，从而引发了对他旅行真实性的讨论？"
+            }
+        ]
     },
     {
-        "quoteKey": 7,
-        "quote": "Did you know that some scholars have debated the accuracy of Marco Polo's descriptions, leading to discussions about the authenticity of his travels?"
+        "factKey": 7,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je knjiga Marka Pola odigrala ključnu ulogu u inspiriranju kasnijih istraživača, uključujući Kristofora Kolumba?",
+                "eng": "Did you know that Marco Polo's book played a crucial role in inspiring later explorers, including Christopher Columbus?",
+                "ch": "你知道馬可·波羅的書對啟發後來的探險家，包括克里斯托弗·哥倫布，發揮了至關重要的作用嗎？"
+            }
+        ]
     },
     {
-        "quoteKey": 8,
-        "quote": "Did you know that Marco Polo's book played a crucial role in inspiring later explorers, including Christopher Columbus?"
+        "factKey": 8,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Marco Polo zarobljen i zatvoren tijekom sukoba između Venecije i Genove, tijekom kojeg je ispričao svoja iskustva suzatvoreniku Rustichellu de Pisa?",
+                "eng": "Did you know that Marco Polo was captured and imprisoned during a conflict between Venice and Genoa, during which he narrated his experiences to fellow inmate Rustichello de Pisa?",
+                "ch": "你知道嗎，馬可·波羅在威尼斯和熱那亞之間的衝突中被俘並被監禁，期間他向獄友魯斯蒂切羅·德·比薩講述了自己的經歷？"
+            }
+        ]
     },
     {
-        "quoteKey": 9,
-        "quote": "Did you know that Marco Polo was captured and imprisoned during a conflict between Venice and Genoa, during which he narrated his experiences to fellow inmate Rustichello de Pisa?"
+        "factKey": 9,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je knjiga Marca Pola isprva dočekana sa skepsom u Europi, ali je kasnije stekla široku popularnost?",
+                "eng": "Did you know that Marco Polo's book was initially met with skepticism in Europe but later gained widespread popularity?",
+                "ch": "你知道吗，马可·波罗的书最初在欧洲受到质疑，但后来却广受欢迎？"
+            }
+        ]
     },
     {
-        "quoteKey": 10,
-        "quote": "Did you know that Marco Polo's book was initially met with skepticism in Europe but later gained widespread popularity?"
+        "factKey": 10,
+        "lang": [
+            {
+                "hr": "Jeste li znali da neki povjesničari vjeruju da je Marko Polo možda preuveličao ili pogrešno shvatio određene aspekte svojih putovanja zbog jezičnih barijera i kulturnih razlika?",
+                "eng": "Did you know that some historians believe Marco Polo might have exaggerated or misunderstood certain aspects of his travels due to language barriers and cultural differences?",
+                "ch": "你知道吗，一些历史学家认为，由于语言障碍和文化差异，马可·波罗可能夸大或误解了他旅行的某些方面？"
+            }
+        ]
     },
     {
-        "quoteKey": 11,
-        "quote": "Did you know that some historians believe Marco Polo might have exaggerated or misunderstood certain aspects of his travels due to language barriers and cultural differences?"
+        "factKey": 11,
+        "lang": [
+            {
+                "hr": "Jeste li znali da su opisi papirnatog novca, ugljena i drugih inovacija u Kini Marka Pola bili revolucionarni za europske čitatelje?",
+                "eng": "Did you know that Marco Polo's descriptions of paper money, coal, and other innovations in China were groundbreaking for European readers?",
+                "ch": "你知道马可波罗对中国纸币、煤炭和其他创新的描述对欧洲读者来说是开创性的吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 12,
-        "quote": "Did you know that Marco Polo's descriptions of paper money, coal, and other innovations in China were groundbreaking for European readers?"
+        "factKey": 12,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je putovanje Marka Pola Putom svile imalo značajan utjecaj na razmjenu dobara, ideja i tehnologija između Istoka i Zapada?",
+                "eng": "Did you know that Marco Polo's journey through the Silk Road had a significant impact on the exchange of goods, ideas, and technologies between East and West?",
+                "ch": "你知道马可波罗的丝绸之路之旅对东西方之间的商品、思想和技术交流产生了重大影响吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 13,
-        "quote": "Did you know that Marco Polo's journey through the Silk Road had a significant impact on the exchange of goods, ideas, and technologies between East and West?"
+        "factKey": 13,
+        "lang": [
+            {
+                "hr": "Jeste li znali da su detaljni izvještaji Marka Pola o Kini uključivali opise Velikog zida, koji je fascinirao europske čitatelje?",
+                "eng": "Did you know that Marco Polo's detailed accounts of China included descriptions of the Great Wall, which fascinated European readers?",
+                "ch": "你知道马可·波罗对中国的详细记述中包括对长城的描述，这让欧洲读者着迷吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 14,
-        "quote": "Did you know that Marco Polo's detailed accounts of China included descriptions of the Great Wall, which fascinated European readers?"
+        "factKey": 14,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je knjiga Marka Pola postala bestseler u Europi, prevedena na razne jezike i stoljećima inspirirala istraživače?",
+                "eng": "Did you know that Marco Polo's book became a bestseller in Europe, translated into various languages and inspiring explorers for centuries?",
+                "ch": "你知道吗，马可·波罗的书成为欧洲的畅销书，被翻译成多种语言，几个世纪以来一直激励着探险家？"
+            }
+        ]
     },
     {
-        "quoteKey": 15,
-        "quote": "Did you know that Marco Polo's book became a bestseller in Europe, translated into various languages and inspiring explorers for centuries?"
+        "factKey": 15,
+        "lang": [
+            {
+                "hr": "Jeste li znali da su priče Marka Pola o 'Starcu s planine' pridonijele europskim zabludama o asasinima, tajnoj sekti u Perziji?",
+                "eng": "Did you know that Marco Polo's tales of the 'Old Man of the Mountain' contributed to European misconceptions about the Assassins, a secretive sect in Persia?",
+                "ch": "你知道吗，马可·波罗的‘山中老人’的故事导致了欧洲人对波斯秘密教派——刺客组织的误解？"
+            }
+        ]
     },
     {
-        "quoteKey": 16,
-        "quote": "Did you know that Marco Polo's tales of the 'Old Man of the Mountain' contributed to European misconceptions about the Assassins, a secretive sect in Persia?"
+        "factKey": 16,
+        "lang": [
+            {
+                "hr": "Jeste li znali da su spisi Marka Pola dali Europljanima prve detaljne izvještaje o egzotičnim životinjama kao što su nosorog i panda?",
+                "eng": "Did you know that Marco Polo's writings provided Europeans with their first detailed accounts of exotic animals such as the rhinoceros and the panda?",
+                "ch": "你知道马可·波罗的著作为欧洲人提供了他们对犀牛和熊猫等珍奇动物的第一份详细描述吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 17,
-        "quote": "Did you know that Marco Polo's writings provided Europeans with their first detailed accounts of exotic animals such as the rhinoceros and the panda?"
+        "factKey": 17,
+        "lang": [
+            {
+                "hr": "Jeste li znali da su zapažanja Marka Pola o kineskim običajima, uključujući korištenje štapića i ispijanje čaja, bila novost za Europljane?",
+                "eng": "Did you know that Marco Polo's observations on Chinese customs, including the use of chopsticks and tea drinking, were novel to Europeans?",
+                "ch": "你知道马可·波罗对中国习俗的观察，包括使用筷子和喝茶，对欧洲人来说是新奇的吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 18,
-        "quote": "Did you know that Marco Polo's observations on Chinese customs, including the use of chopsticks and tea drinking, were novel to Europeans?"
+        "factKey": 18,
+        "lang": [
+            {
+                "hr": "Jeste li znali da su izvještaji Marka Pola o mongolskom poštanskom sustavu i korištenju ugljena za gorivo u Kini bili ispred njegovog vremena?",
+                "eng": "Did you know that Marco Polo's accounts of the Mongol postal system and the use of coal for fuel in China were ahead of his time?",
+                "ch": "你知道马可·波罗对蒙古邮政系统和中国煤炭燃料使用的描述是超前于他的时代的吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 19,
-        "quote": "Did you know that Marco Polo's accounts of the Mongol postal system and the use of coal for fuel in China were ahead of his time?"
+        "factKey": 19,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je knjiga Marka Pola Europljanima osvijetlila golemost Mongolskog Carstva i raznolikost njegovih kultura?",
+                "eng": "Did you know that Marco Polo's book illuminated the vastness of the Mongol Empire and the diversity of its cultures to Europeans?",
+                "ch": "你知道马可·波罗的书向欧洲人展示了蒙古帝国的幅员辽阔及其文化的多样性吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 20,
-        "quote": "Did you know that Marco Polo's book illuminated the vastness of the Mongol Empire and the diversity of its cultures to Europeans?"
+        "factKey": 20,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublaj-kan bio unuk Džingis-kana?",
+                "eng": "Did you know that Kublai Khan was the grandson of Genghis Khan?",
+                "ch": "你知道忽必烈是成吉思汗的孙子吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 21,
-        "quote": "Did you know that Kublai Khan was the grandson of Genghis Khan?"
+        "factKey": 21,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublaj-kan rođen 1215. kao drugi sin Toluija i Sorghaghtani Beki?",
+                "eng": "Did you know that Kublai Khan was born in 1215, the second son of Tolui and Sorghaghtani Beki?",
+                "ch": "你知道忽必烈出生于1215年，是拖雷和索尔噶塔尼别期的次子吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 22,
-        "quote": "Did you know that Kublai Khan was born in 1215, the second son of Tolui and Sorghaghtani Beki?"
+        "factKey": 22,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublaj-kan 1260. godine postao peti Veliki kan Mongolskog Carstva?",
+                "eng": "Did you know that Kublai Khan became the fifth Great Khan of the Mongol Empire in 1260?",
+                "ch": "你知道忽必烈于1260年成为蒙古帝国第五位大汗吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 23,
-        "quote": "Did you know that Kublai Khan became the fifth Great Khan of the Mongol Empire in 1260?"
+        "factKey": 23,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublaj-kan bio osnivač dinastije Yuan u Kini, koja je vladala od 1271. do 1294.?",
+                "eng": "Did you know that Kublai Khan was the founder of the Yuan dynasty in China, ruling from 1271 to 1294?",
+                "ch": "你知道忽必烈是中国元朝的创建者，从 1271 年到 1294 年在位吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 24,
-        "quote": "Did you know that Kublai Khan was the founder of the Yuan dynasty in China, ruling from 1271 to 1294?"
+        "factKey": 24,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublaj-kan bio prvi mongolski vladar koji je usvojio kinesku carsku titulu cara?",
+                "eng": "Did you know that Kublai Khan was the first Mongol ruler to adopt the Chinese imperial title of Emperor?",
+                "ch": "你知道忽必烈是第一个采用中国皇帝称号的蒙古统治者吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 25,
-        "quote": "Did you know that Kublai Khan was the first Mongol ruler to adopt the Chinese imperial title of Emperor?"
+        "factKey": 25,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublai Khan uspostavio svoju prijestolnicu u Shangduu, koji je Marco Polo kasnije opisao kao Xanadu?",
+                "eng": "Did you know that Kublai Khan established his capital at Shangdu, which Marco Polo later described as Xanadu?",
+                "ch": "你知道忽必烈在上都建都吗？马可波罗后来将这里称为世外桃源？"
+            }
+        ]
     },
     {
-        "quoteKey": 26,
-        "quote": "Did you know that Kublai Khan established his capital at Shangdu, which Marco Polo later described as Xanadu?"
+        "factKey": 26,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublai Khan uspješno osvojio Južnu dinastiju Song 1279. godine, ujedinivši Kinu?",
+                "eng": "Did you know that Kublai Khan successfully conquered the Southern Song Dynasty in 1279, unifying China?",
+                "ch": "你知道忽必烈于1279年成功征服南宋，统一中国吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 27,
-        "quote": "Did you know that Kublai Khan successfully conquered the Southern Song Dynasty in 1279, unifying China?"
+        "factKey": 27,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublaj-kan aktivno promicao kulturnu razmjenu između Mongola, Kineza, Perzijanaca i drugih kultura u svom kraljevstvu?",
+                "eng": "Did you know that Kublai Khan actively promoted cultural exchange between Mongols, Chinese, Persians, and other cultures in his realm?",
+                "ch": "你知道忽必烈在他的王国里积极促进蒙古人、中国人、波斯人以及其他文化之间的文化交流吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 28,
-        "quote": "Did you know that Kublai Khan actively promoted cultural exchange between Mongols, Chinese, Persians, and other cultures in his realm?"
+        "factKey": 28,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Marko Polo služio kao savjetnik Kublaj-kana i da je dokumentirao svoja iskustva na svojim putovanjima?",
+                "eng": "Did you know that Marco Polo served as an advisor to Kublai Khan and documented his experiences in his travels?",
+                "ch": "你知道马可·波罗是忽必烈汗的顾问，并在他的旅行中记录了他的经历吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 29,
-        "quote": "Did you know that Marco Polo served as an advisor to Kublai Khan and documented his experiences in his travels?"
+        "factKey": 29,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublai Khan bio pokrovitelj umjetnosti i da je podupirao izgradnju raznih arhitektonskih čuda u Kini?",
+                "eng": "Did you know that Kublai Khan was a patron of the arts and supported the construction of various architectural marvels in China?",
+                "ch": "你知道忽必烈是一位艺术赞助人，支持中国建造各种建筑奇迹吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 30,
-        "quote": "Did you know that Kublai Khan was a patron of the arts and supported the construction of various architectural marvels in China?"
+        "factKey": 30,
+        "lang": [
+            {
+                "hr": "Jeste li znali da se Kublai Khan zanimao za budizam i da je pozvao tibetanskog lamu Phagspu da mu bude duhovni savjetnik?",
+                "eng": "Did you know that Kublai Khan was interested in Buddhism and invited the Tibetan lama Phagspa to be his spiritual advisor?",
+                "ch": "你知道忽必烈对佛教很感兴趣，并邀请西藏喇嘛八思巴做他的精神导师吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 31,
-        "quote": "Did you know that Kublai Khan was interested in Buddhism and invited the Tibetan lama Phagspa to be his spiritual advisor?"
+        "factKey": 31,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublaj-kanova vladavina označila vrhunac mongolskog utjecaja u Euroaziji?",
+                "eng": "Did you know that Kublai Khan's reign marked the peak of Mongol influence in Eurasia?",
+                "ch": "你知道忽必烈汗的统治标志着蒙古在欧亚大陆影响力的顶峰吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 32,
-        "quote": "Did you know that Kublai Khan's reign marked the peak of Mongol influence in Eurasia?"
+        "factKey": 32,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublai Khan pokušao dvije neuspjele invazije na Japan, poznate kao Kamikaze tajfuni 1274. i 1281.?",
+                "eng": "Did you know that Kublai Khan attempted two failed invasions of Japan, known as the Kamikaze typhoons in 1274 and 1281?",
+                "ch": "你知道吗，忽必烈曾两次尝试入侵日本，即 1274 年和 1281 年的神风台风，但都失败了？"
+            }
+        ]
     },
     {
-        "quoteKey": 33,
-        "quote": "Did you know that Kublai Khan attempted two failed invasions of Japan, known as the Kamikaze typhoons in 1274 and 1281?"
+        "factKey": 33,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je unatoč svojim vojnim kampanjama, Kublai Khan također proveo administrativne reforme kako bi poboljšao upravljanje?",
+                "eng": "Did you know that despite his military campaigns, Kublai Khan also implemented administrative reforms to improve governance?",
+                "ch": "你知道吗，尽管忽必烈汗进行了军事行动，但他也实施了行政改革以改善治理？"
+            }
+        ]
     },
     {
-        "quoteKey": 34,
-        "quote": "Did you know that despite his military campaigns, Kublai Khan also implemented administrative reforms to improve governance?"
+        "factKey": 34,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublai Khan uspostavio poštanski sustav i promicao korištenje papirnatog novca u svom carstvu?",
+                "eng": "Did you know that Kublai Khan established a postal system and promoted the use of paper money in his empire?",
+                "ch": "你知道忽必烈在他的帝国建立了邮政系统并推广了纸币的使用吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 35,
-        "quote": "Did you know that Kublai Khan established a postal system and promoted the use of paper money in his empire?"
+        "factKey": 35,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublai Khanova politika imala za cilj stvoriti stabilno i prosperitetno društvo u njegovom ogromnom carstvu?",
+                "eng": "Did you know that Kublai Khan's policies aimed to create a stable and prosperous society in his vast empire?",
+                "ch": "你知道忽必烈汗的政策旨在在他庞大的帝国中创造一个稳定和繁荣的社会吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 36,
-        "quote": "Did you know that Kublai Khan's policies aimed to create a stable and prosperous society in his vast empire?"
+        "factKey": 36,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublai Khan bio poznat po svojoj toleranciji prema različitim religijama, dopuštajući slobodu bogoslužja u svom kraljevstvu?",
+                "eng": "Did you know that Kublai Khan was known for his tolerance of different religions, allowing freedom of worship in his realm?",
+                "ch": "你知道忽必烈汗以对不同宗教的宽容而闻名，允许在他的王国里自由信仰吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 37,
-        "quote": "Did you know that Kublai Khan was known for his tolerance of different religions, allowing freedom of worship in his realm?"
+        "factKey": 37,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublaj-kanovo carstvo prvo uspostavilo izravan kontakt između Istoka i Zapada u srednjem vijeku?",
+                "eng": "Did you know that Kublai Khan's empire was the first to establish direct contact between the East and West in the medieval period?",
+                "ch": "你知道忽必烈帝国是中世纪第一个建立东西方直接联系的帝国吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 38,
-        "quote": "Did you know that Kublai Khan's empire was the first to establish direct contact between the East and West in the medieval period?"
+        "factKey": 38,
+        "lang": [
+            {
+                "hr": "Jeste li znali da je Kublai Khan proširio Veliki kanal, olakšavajući trgovinu i komunikaciju u različitim regijama Kine?",
+                "eng": "Did you know that Kublai Khan expanded the Grand Canal, facilitating trade and communication across different regions of China?",
+                "ch": "你知道忽必烈扩建了大运河，促进了中国不同地区的贸易和交流吗？"
+            }
+        ]
     },
     {
-        "quoteKey": 39,
-        "quote": "Did you know that Kublai Khan expanded the Grand Canal, facilitating trade and communication across different regions of China?"
-    },
-    {
-        "quoteKey": 40,
-        "quote": "Did you know that Kublai Khan faced challenges from within his own family, including disputes over succession?"
+        "factKey": 39,
+        "lang": [
+            {
+                "hr": "Jeste li znali da se Kublai Khan suočavao s izazovima unutar vlastite obitelji, uključujući sporove oko nasljeđivanja?",
+                "eng": "Did you know that Kublai Khan faced challenges from within his own family, including disputes over succession?",
+                "ch": "你知道忽必烈面临着来自家族内部的挑战，包括继承纠纷吗？"
+            }
+        ]
     }
 ]

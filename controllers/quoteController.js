@@ -1,14 +1,14 @@
 'use strict';
 
-const Quote = require('../models/quoteModel');
+const Fact = require('../models/quoteModel');
 const apiError = require('../utils/apiError');
 
-exports.getAllQuotes = async (req, res, next) => {
+exports.getAllFacts = async (req, res, next) => {
     try {
-        const quotes = await Quote.find({});
+        const facts = await Fact.find({}, { _id: 0 });
         res.status(200).json({
             status: 'success',
-            quotes
+            facts
         })
     }
     catch (err) {
@@ -17,27 +17,31 @@ exports.getAllQuotes = async (req, res, next) => {
 }
 
 
-exports.getOneQuote = async (req, res, next) => {
+exports.getOneFact = async (req, res, next) => {
     try {
-        const countDocs = await Quote.countDocuments();
-        const rng = Math.floor(Math.random() * countDocs);
-        if (rng > countDocs) {
-            const singleQuote = await Quote.findOne({ quoteKey: 1 });
-            res.status(200).json({
-                status: 'success',
-                singleQuote
-            })
-        }
-        else {
-            const singleQuote = await Quote.findOne({ quoteKey: rng });
-            res.status(200).json({
-                status: 'success',
-                singleQuote
-            })
-        }
-
+        const singleFact = await Fact.aggregate([
+            { $sample: { size: 1 } },
+            { $project: { _id: 0 } }
+        ])
+        res.status(200).json({
+            status: 'success',
+            singleFact
+        })
     }
     catch (err) {
+        return next(new apiError('Something went wrong.', 500));
+    }
+}
+
+exports.createNewFact = async (req, res, next) => {
+    try {
+        const newFact = await Fact.create(req.body);
+        res.status(201).json({
+            status: 'success',
+            newFact
+        })
+
+    } catch (err) {
         return next(new apiError('Something went wrong.', 500));
     }
 }
