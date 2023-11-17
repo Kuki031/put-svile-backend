@@ -2,24 +2,18 @@
 
 const Fact = require('../models/quoteModel');
 const apiError = require('../utils/apiError');
+const Features = require('../utils/apiFeatures');
 
 exports.getAllFacts = async (req, res, next) => {
     try {
-        const objQuery = { ...req.query };
-        const filterFields = ["sort", "paginate", "project", "field"];
-        filterFields.forEach(field => delete objQuery[field]);
-        let queryString = JSON.stringify(objQuery);
-        queryString = queryString.replace(/(gt|gte|lt|lte)/g, (el) => `$${el}`);
-
-        let query = JSON.parse(queryString);
-        const facts = await Fact.find(query, { _id: 0 });
+        const features = new Features(Fact, req.query).filter().sort();
+        const facts = await features.model;
         res.status(200).json({
             status: 'success',
             facts
         })
     }
     catch (err) {
-        console.log(err);
         return next(new apiError('Something went wrong.', 500));
     }
 }

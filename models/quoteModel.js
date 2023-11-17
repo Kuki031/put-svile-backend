@@ -16,7 +16,6 @@ const factSchema = new mongoose.Schema({
 
 factSchema.pre(/^find/, function (next) {
     this.select("-__v");
-    this.sort("factKey");
     next();
 })
 
