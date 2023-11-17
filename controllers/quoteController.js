@@ -21,7 +21,7 @@ exports.getOneFact = async (req, res, next) => {
     try {
         const singleFact = await Fact.aggregate([
             { $sample: { size: 1 } },
-            { $project: { _id: 0 } }
+            { $project: { _id: 0, __v: 0 } }
         ])
         res.status(200).json({
             status: 'success',
