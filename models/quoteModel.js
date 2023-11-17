@@ -7,10 +7,7 @@ const factSchema = new mongoose.Schema({
         unique: true,
         required: true
     },
-    lang: {
-        type: Array,
-        required: true
-    }
+    lang: [String]
 }, {
     toJSON: { virtuals: true },
     toObject: { virtuals: true }
