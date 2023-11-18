@@ -5,7 +5,6 @@ const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
 const sanitizer = require('perfect-express-sanitizer');
-const cookies = require('cookie-parser');
 const app = express();
 const quoteRouter = require('./routes/quoteRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
@@ -20,7 +19,6 @@ app.use(cors({
     allowedHeaders: '*',
     origin: '*'
 }));
-app.use(cookies())
 app.use(sanitizer.clean({
     xss: true,
     noSql: true,

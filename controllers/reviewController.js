@@ -3,18 +3,14 @@
 const Review = require('../models/reviewModel');
 const apiError = require('../utils/apiError');
 const apiFeatures = require('../utils/apiFeatures');
-const cookieOptions = {
-    expires: parseInt(new Date(Date.now() + process.env.COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000)),
-    httpOnly: true
-}
+
 exports.createReview = async (req, res, next) => {
     try {
         const newReview = await Review.create({
             rating: req.body.rating,
             comment: req.body.comment
         });
-        if (process.env.NODE_ENV === 'production') cookieOptions.secure = true;
-        res.status(201).cookie('reviewSubmitted', Date.now(), cookieOptions).json({
+        res.status(201).json({
             status: 'success',
             newReview
         })
