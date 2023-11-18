@@ -18,6 +18,7 @@ app.use(helmet());
 app.use(express.json({ limit: '10kb' }))
 app.use(cors());
 app.options('*', cors());
+app.enable('trust proxy');
 app.use(sanitizer.clean({
     xss: true,
     noSql: true,
