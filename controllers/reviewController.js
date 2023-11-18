@@ -33,3 +33,34 @@ exports.getAllReviews = async (req, res, next) => {
         return next(new apiError('Something went wrong.', 500));
     }
 }
+
+exports.reviewStatistics = async (req, res, next) => {
+    try {
+        const reviewStats = await Review.aggregate([
+
+            {
+                $group: {
+                    _id: "$rating",
+                    numOfReviews: { $count: {} },
+                    comments: { $push: "$comment" }
+                }
+            },
+            {
+                $sort: { _id: -1 }
+            }
+        ]);
+        const getAllRecords = (await Review.find({}))
+            .map(x => parseInt(x.rating))
+            .reduce((x, y) => x + y);
+        const totalAverage = (getAllRecords / await Review.countDocuments()).toFixed(2);
+        res.status(200).json({
+            status: 'success',
+            reviewStats,
+            totalAverage
+        })
+    }
+    catch (err) {
+        return next(new apiError('Something went wrong.', 500));
+    }
+}
+

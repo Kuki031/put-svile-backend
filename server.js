@@ -8,6 +8,10 @@ const DB_CONNECT = process.env.DB_CONNECTION_STRING.replace('<password>', proces
 const PORT = process.env.PORT || 3000;
 const LOCALHOST = process.env.LOCALHOST;
 
+process.on('uncaughtException', err => {
+    process.exit(1);
+})
+
 const connectToDB = async () => {
     try {
         await mongoose.connect(DB_CONNECT);
@@ -20,7 +24,12 @@ const connectToDB = async () => {
 connectToDB();
 
 
-app.listen(PORT, LOCALHOST, () => {
+const server = app.listen(PORT, LOCALHOST, () => {
     console.log(`App running on ${LOCALHOST}:${PORT}`);
+})
+process.on('unhandledRejection', err => {
+    server.close(() => {
+        process.exit(1);
+    })
 })
 
