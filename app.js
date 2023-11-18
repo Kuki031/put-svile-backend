@@ -6,7 +6,6 @@ const cors = require('cors');
 const helmet = require('helmet');
 const sanitizer = require('perfect-express-sanitizer');
 const compression = require('compression');
-const cookieParser = require('cookie-parser');
 const app = express();
 const quoteRouter = require('./routes/quoteRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
@@ -25,7 +24,6 @@ app.use(sanitizer.clean({
     sql: true
 }))
 app.use(compression());
-app.use(cookieParser());
 app.use(express.urlencoded({
     extended: true,
     limit: '10kb'
