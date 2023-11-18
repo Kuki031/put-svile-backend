@@ -18,9 +18,9 @@ exports.createReview = async (req, res, next) => {
             status: 'success',
             newReview
         })
+        console.log(req.cookies);
     }
     catch (err) {
-        console.log(err);
         return next(new apiError('Something went wrong.', 500));
     }
 }
