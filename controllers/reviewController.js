@@ -49,10 +49,9 @@ exports.reviewStatistics = async (req, res, next) => {
                 $sort: { _id: -1 }
             }
         ]);
-        const getAllRecords = (await Review.find({}))
-            .map(x => parseInt(x.rating))
-            .reduce((x, y) => x + y);
-        const totalAverage = (getAllRecords / await Review.countDocuments()).toFixed(2);
+        const getAllRecords = await Review.find({});
+        const sumReviews = getAllRecords.map(x => parseInt(x.rating)).reduce((x, y) => x + y);
+        const totalAverage = (sumReviews / getAllRecords.length).toFixed(2);
         res.status(200).json({
             status: 'success',
             reviewStats,
