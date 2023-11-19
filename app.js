@@ -6,6 +6,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const sanitizer = require('perfect-express-sanitizer');
 const compression = require('compression');
+const hpp = require('hpp');
 const app = express();
 const quoteRouter = require('./routes/quoteRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
@@ -24,11 +25,18 @@ app.use(sanitizer.clean({
     noSql: true,
     sql: true
 }))
+
+
 app.use(compression());
 app.use(express.urlencoded({
     extended: true,
     limit: '10kb'
 }))
+app.use(hpp({
+    whitelist: [
+        "factKey", "sort", "limit", "page"
+    ]
+}));
 app.use('/api/v1/quotes', quoteRouter);
 app.use('/api/v1/reviews', reviewRouter);
 

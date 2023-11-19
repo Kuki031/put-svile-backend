@@ -22,10 +22,14 @@ exports.createReview = async (req, res, next) => {
 
 exports.getAllReviews = async (req, res, next) => {
     try {
-        const features = new apiFeatures(Review, req.query).filter().sort();
+        const features = new apiFeatures(Review, req.query)
+            .filter()
+            .sort()
+            .paginate();
         const reviews = await features.model;
         res.status(200).json({
             status: 'success',
+            length: reviews.length,
             reviews
         })
     }

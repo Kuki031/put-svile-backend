@@ -12,13 +12,18 @@ const reviewSchema = new mongoose.Schema({
             message: "Review rating ranges from 1-5"
         }
     },
-    comment: String
-})
+    comment: String,
+    createdAt: Date
+});
 reviewSchema.pre(/^find/, function (next) {
     this.select("-__v");
     next();
 })
 
+reviewSchema.pre('save', function (next) {
+    this.createdAt = new Date(Date.now()).toISOString();
+    next();
+})
 
 
 const Review = mongoose.model('Review', reviewSchema);

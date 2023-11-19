@@ -7,17 +7,19 @@ const factSchema = new mongoose.Schema({
         unique: true,
         required: true
     },
-    lang: [String]
-}, {
-    toJSON: { virtuals: true },
-    toObject: { virtuals: true }
-})
+    fact: String,
+    isAbout: {
+        type: String,
+        enum: ["marco-polo", "kublai-khan"]
+    }
+});
 
 
 factSchema.pre(/^find/, function (next) {
     this.select("-__v");
     next();
 })
+
 
 
 const Fact = mongoose.model('Fact', factSchema);

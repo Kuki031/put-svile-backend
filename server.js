@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 3000;
 const LOCALHOST = process.env.LOCALHOST;
 
 process.on('uncaughtException', err => {
+    console.error(err.message);
     process.exit(1);
 })
 
@@ -29,6 +30,7 @@ const server = app.listen(PORT, LOCALHOST, () => {
 })
 process.on('unhandledRejection', err => {
     server.close(() => {
+        console.error(err.message);
         process.exit(1);
     })
 })

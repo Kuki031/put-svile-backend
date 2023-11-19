@@ -26,6 +26,13 @@ class Features {
         }
         return this;
     }
+    paginate() {
+        const page = parseInt(this.queryStr.page) || 1;
+        const limit = parseInt(this.queryStr.limit);
+        const skip = (page - 1) * limit;
+        this.model.skip(skip).limit(limit);
+        return this;
+    }
 }
 
 module.exports = Features;
