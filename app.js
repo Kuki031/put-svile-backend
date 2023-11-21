@@ -10,6 +10,7 @@ const hpp = require('hpp');
 const app = express();
 const quoteRouter = require('./routes/quoteRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
+const fortuneRouter = require('./routes/fortuneCitationRoutes');
 const errorController = require('./controllers/errorController');
 
 
@@ -34,11 +35,12 @@ app.use(express.urlencoded({
 }))
 app.use(hpp({
     whitelist: [
-        "factKey", "sort", "limit", "page"
+        "factKey", "sort", "limit", "page, citation"
     ]
 }));
 app.use('/api/v1/quotes', quoteRouter);
 app.use('/api/v1/reviews', reviewRouter);
+app.use('/api/v1/fortunes', fortuneRouter);
 
 app.use('/', errorController);
 module.exports = app;

@@ -13,7 +13,7 @@ const factSchema = new mongoose.Schema({
         enum: ["marco-polo", "kublai-khan"]
     }
 });
-
+factSchema.index({ fact: 1 });
 
 factSchema.pre(/^find/, function (next) {
     this.select("-__v");

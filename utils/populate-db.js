@@ -6,7 +6,9 @@ dotenv.config({ path: './cfg.env' });
 const mongoose = require('mongoose');
 const Fact = require('../models/quoteModel');
 const Review = require('../models/reviewModel');
+const FortuneCitation = require('../models/fortuneCitationModel');
 const quoteData = JSON.parse(fs.readFileSync('./dev-data/quotes.json'));
+const citationData = JSON.parse(fs.readFileSync('./dev-data/citations.json'));
 
 const DB_CONNECT = process.env.DB_CONNECTION_STRING.replace('<password>', process.env.DB_CONNECTION_PW);
 const connectToDB = async () => {
@@ -22,7 +24,7 @@ connectToDB();
 
 const importData = async () => {
     try {
-        await Fact.create(quoteData);
+        await Promise.all([FortuneCitation.create(citationData), Fact.create(quoteData)]);
         console.log('DB populated succesfully.');
     }
     catch (err) {
@@ -33,7 +35,7 @@ const importData = async () => {
 
 const deleteData = async () => {
     try {
-        Promise.all([await Fact.deleteMany({}), await Review.deleteMany({})]);
+        await Promise.all([Fact.deleteMany({}), Review.deleteMany({}), FortuneCitation.deleteMany({})]);
         console.log('DB entries deleted succesfuly.');
     }
     catch (err) {

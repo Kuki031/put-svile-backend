@@ -17,12 +17,12 @@ class Features {
         return this;
     }
 
-    sort() {
+    sort(sortby) {
         if (this.queryStr.sort) {
             const sortFields = this.queryStr.sort.split(" ").join(" ");
             this.model = this.model.sort(sortFields);
         } else {
-            this.model = this.model.sort("factKey")
+            this.model = this.model.sort(sortby);
         }
         return this;
     }
