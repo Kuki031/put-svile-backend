@@ -61,7 +61,7 @@ exports.getOneFact = async (req, res, next) => {
 }
 exports.getMoreFactsAbout = async (req, res, next) => {
     try {
-        let arr = [];
+        let storeResolvedPromises = [];
         const moreFacts = await Fact.aggregate([
             {
                 $match: { isAbout: req.params.about }
@@ -78,7 +78,7 @@ exports.getMoreFactsAbout = async (req, res, next) => {
         ]);
         try {
             for (const [_i, v] of Object.entries(moreFacts)) {
-                arr.push(await Promise.all([
+                storeResolvedPromises.push(await Promise.all([
                     translate({ text: `${v.fact}`, source: "hr", target: "en" }),
                     translate({ text: `${v.fact}`, source: "hr", target: "zh" })
                 ]))
@@ -87,7 +87,7 @@ exports.getMoreFactsAbout = async (req, res, next) => {
         catch (err) {
             return next(new apiError('Something went wrong.', 500));
         }
-        const [...fact] = arr;
+        const [...fact] = storeResolvedPromises;
         const translated = fact
             .map(x => x
                 .map(y => y.translation));

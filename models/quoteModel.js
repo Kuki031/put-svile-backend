@@ -14,6 +14,7 @@ const factSchema = new mongoose.Schema({
     }
 });
 factSchema.index({ fact: 1 });
+factSchema.index({ isAbout: 1 });
 
 factSchema.pre(/^find/, function (next) {
     this.select("-__v");
