@@ -29,6 +29,9 @@ exports.getOneFact = async (req, res, next) => {
         let translations;
         const singleFact = await Fact.aggregate([
             {
+                $match: { isAbout: req.params.about }
+            },
+            {
                 $sample: { size: 1 }
             },
             {
@@ -56,6 +59,7 @@ exports.getOneFact = async (req, res, next) => {
         })
     }
     catch (err) {
+        console.log(err);
         return next(new apiError('Something went wrong.', 500));
     }
 }
