@@ -59,7 +59,6 @@ exports.getOneFact = async (req, res, next) => {
         })
     }
     catch (err) {
-        console.log(err);
         return next(new apiError('Something went wrong.', 500));
     }
 }
